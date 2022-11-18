@@ -54,6 +54,7 @@ section{
 .heading{
    text-align: center;
    margin-bottom: 3rem;
+  
 }
 
 .heading span{
@@ -91,6 +92,7 @@ section{
    top:0; left:0; right: 0;
    background: var(--white);
    z-index: 1000;
+   background-color: black;
 }
 
 .header .logo{
@@ -107,7 +109,8 @@ section{
 .header .navbar a{
    font-size: 2rem;
    margin-left: 2rem;
-   color:var(--light-black);
+   color: white;
+  
 }
 
 .header .navbar a:hover{
@@ -117,8 +120,9 @@ section{
 #menu-btn{
    font-size: 2.5rem;
    cursor: pointer;
-   color:var(--black);
+   color:var(--white);
    display: none;
+
 }
 
 @keyframes fadeIn {
@@ -704,6 +708,8 @@ section{
    section{
       padding:3rem 5%;
    }
+ 
+
 
 }
 
@@ -748,6 +754,11 @@ section{
    .header .navbar a{
       display: block;
       margin:2rem;
+      
+   }
+   .header .navbar {
+     
+      background-color: black;
    }
 
    .swiper-button-next,
@@ -771,20 +782,60 @@ section{
    .home .slide .content h3{
       font-size: 7rem;
    }
+  
+
 
 }
 
 
-.image{
+.logo{
    width: 80%;
    height: 80px;
    border-radius: 100%;
    cursor: pointer;
 }
 
-.whatsapp{
-   display: inline-flex;
-   position: relative;
+.popup{
+   width: 400px;
+   background: #fff;
+   border-radius: 6px;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0.1);
+   text-align: center;
+   padding: 0 30px 30px;
+   color: #333;
+   visibility: hidden;
+   transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+   visibility: visible;
+   top: 50%;
+   transform: translate(-50%, -50%) scale(1);
+}
 
-
+.popup img{
+   width: 100px;
+   margin-top: -50px;
+   border-radius: 50px;
+   box-shadow: 0 2px 5px rgba(0,0,0,.0.2);
+}
+.popup h2{
+  font-size: 38px;
+  font-weight: 500;
+   margin: 30px 0 10px;
+}
+.popup button{
+   width: 100%;
+   margin-top: 50px;
+   padding: 10px 0;
+   background:#6fd649 ;
+   color: #fff;
+   border: 0;
+   outline: none;
+   font-size: 18px;
+   border-radius: 4px;
+   cursor: pointer;
+   box-shadow: 0 5px 5px rgba(0,0,0,.0.2);
 }

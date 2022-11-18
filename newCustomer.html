@@ -23,7 +23,7 @@
 
 <section class="header">
 
-   <a href="index.html"><image class="image" src="/images//logo.jpg"/></a>
+   <a href="index.html"><image class="logo" src="/images//logo.jpg"/></a>
 
    <nav class="navbar">
       <a href="index.html">home</a>
@@ -51,17 +51,39 @@
          <div class="swiper-slide slide" style="background: url(images/pic_2.jpeg) no-repeat;">
             <div class="content">
                <span>Great ambiance</span>
-               <h3>You are welcome</h3>
+               <h3>Serene atmosphere</h3>
                
-                 </div>
+                <a href="oldCustomer.html" class="btn">Existing Customer</a>
+                <p></p>
+                <a href="newCustomer.html" class="btn">New Customer</a>
+            
+               </div>
                 </div>
+                <div class="swiper-slide slide" style="background: url(images/pic_1.jpeg) no-repeat;">
+            <div class="content">
+               <span>Great ambiance</span>
+               <h3>Serene atmosphere</h3>
+               <a href="oldCustomer.html" class="btn">Existing Customer</a>
+               <p></p>
+               <a href="newCustomer.html" class="btn">New Customer</a>   
+            </div>
+         </div>
          </div>
 
-        
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+
+       
+         </div>
+
+      </div>
+
+     
 
    </div>
 
 </section>
+
 
 
 <section class="order" id="order">
@@ -71,16 +93,16 @@
        <h3>Make your reservation today</h3>
     </div>
  
-    <form  action="https://formsubmit.co/junioraddo07@gmail.com" method="post">
+    <form  action="https://formspree.io/f/mwkzygrb" method="post" style="position: relative;">
        <div class="box-container">
           <div class="box">
              <div class="inputBox">
                 <span>full name</span>
-                <input type="text" placeholder="enter your name">
+                <input type="text" placeholder="enter your name" name="fullName">
              </div>
              <div class="inputBox">
                 <span>Email</span>
-                <input type="email" placeholder="enter your email">
+                <input type="email" placeholder="enter your email"  name="email">
              </div>
             
              
@@ -88,19 +110,25 @@
           <div class="box">
              <div class="inputBox">
                 <span>Phone number</span>
-                <input type="number" placeholder="enter your number">
+                <input type="number" placeholder="enter your number"  name="phone">
              </div>
             
              <div class="inputBox">
                 <span>Reservation date and Time</span>
-                <input type="datetime-local">
+                <input type="datetime-local" name="date and time for reservation">
              </div>
+             
             
           </div>
        </div>
-       <a href="sucess.html">
-        <input type="submit" value="Make reservation" class="btn">
-       </a>
+       
+        <button type="submit"  class="btn" onclick="  openPopup()">Make reservation</button>
+        <div class="popup" id="popup">
+         <img src="images/sucess.png">
+         <h2>Thank you</h2>
+         <p>Your details has been successfully submitted. Thanks !</p>
+         <button type="button" onclick="closePopup()">Ok</button>
+        </div>
        
     </form>
     
@@ -324,7 +352,20 @@
 
 
 
-
+<script>
+   let popup = document.getElementById("popup");
+function openPopup() {
+   console.log("Clicked ")
+   setTimeout(openPopup,10000)
+  popup.classList.add("open-popup");
+  window.location.replace("/newCustomer.html");
+ 
+}
+function closePopup() {
+  popup.classList.remove("open-popup");
+ 
+}
+</script>
 
 
 
