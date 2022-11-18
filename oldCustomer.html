@@ -40,7 +40,7 @@
 
 <!-- header section ends    -->
 
-<!-- home section starts  -->
+<!-- home section starts  
 
 <section class="home" id="home">
 
@@ -62,12 +62,13 @@
    </div>
 
 </section>
+-->
 
 
 <section class="order" id="order">
 
     <div class="heading">
-       
+      <h4 style="font-size:20px ; color:white; margin-bottom:40px ;">You are welcome once again</h4>
        <h3>Make your reservation today</h3>
     </div>
  
@@ -80,16 +81,33 @@
              </div>
            
             
-             
+             <div class="inputBox" style="margin-top: 15px;">
+               <span>Reservation date (Kindly click on the icon)</span>
+               <input type="datetime-local" name="reservation_date">
+            </div>
           </div>
           <div class="box">
            
             
              <div class="inputBox">
-                <span>Reservation date and Time (Kindly click on the icon)</span>
-                <input type="datetime-local" name="reservation_date">
+                <span>Reservation duration</span>
+               <br>
+               <select name="duration">
+
+                  <option>Choose duration</option>
+                <option>2pm - 4pm</option>
+                <option>4pm - 6pm</option>
+                <option>6pm - 8pm</option>
+                <option>8pm - 10pm</option>
+                <option>10pm - 12am</option>
+               </select >
              </div>
-            
+
+
+             <div class="inputBox" style="margin-top: 15px;">
+                <span>Comments (if any)</span>
+                <input type="text" name="other duration">
+             </div>
           </div>
        </div>
        <a href="sucess.html">
@@ -271,18 +289,20 @@
       </div>
 
       <div class="icons">
-         <i class="fas fa-phone"></i>
-         <h3>phone</h3>
+         
          <a href="tel:0204640640">
+            <i class="fas fa-phone"></i>
+            <h3>phone</h3>
             <p>  +233 20 464 0640</p>
          </a>
          
       </div>
 
       <div class="icons">
+         
+         <a href="mailto:bar@steamanheights.com">
          <i class="fas fa-envelope"></i>
          <h3>email</h3>
-         <a href="bar@steamanheights.com">
             <p>bar@steamanheights.com</p>
             
          </a> 
@@ -290,10 +310,11 @@
       </div>
 
       <div class="icons">
-         <i class="fas fa-map"></i>
-         <h3>address</h3>
-         <p>Atasomanso, Kumasi</p>
-         <p>Ghana</p>
+         <a target="_blank" href="https://www.google.com/maps/place/The+Heights+Bar+%26+Lounge/@6.6683501,-1.6177796,17z/data=!4m14!1m7!3m6!1s0xfdb973306b999cd:0x4129f525ae6694fb!2sThe+Heights+Bar+%26+Lounge!8m2!3d6.6683501!4d-1.6155855!16s%2Fg%2F11q3dcv24g!3m5!1s0xfdb973306b999cd:0x4129f525ae6694fb!8m2!3d6.6683501!4d-1.6155855!16s%2Fg%2F11q3dcv24g"><i class="fas fa-map"></i>
+            <h3>address</h3>
+            <p>Atasomanso, Kumasi</p>
+            <p>Ghana</p></a>
+         
       </div>
 
    </div>
@@ -306,6 +327,7 @@
     
    
  </div>
+
    <div class="credit"> created by <span>Steaman Solutions</span> | all rights reserved! </div>
 
 </section>

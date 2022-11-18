@@ -40,7 +40,7 @@
 
 <!-- header section ends    -->
 
-<!-- home section starts  -->
+<!-- home section starts  
 
 <section class="home" id="home">
 
@@ -84,7 +84,7 @@
 
 </section>
 
-
+-->
 
 <section class="order" id="order">
 
@@ -104,25 +104,41 @@
                 <span>Email</span>
                 <input type="email" placeholder="enter your email"  name="email">
              </div>
+             <div class="inputBox">
+               <span>Phone number</span>
+               <input type="number" placeholder="enter your number"  name="phone">
+            </div>
             
              
           </div>
           <div class="box">
              <div class="inputBox">
-                <span>Phone number</span>
-                <input type="number" placeholder="enter your number"  name="phone">
+                <span>Reservation duration</span>
+                <br>
+                <select name="duration">
+               
+                   <option>Choose duration</option>
+                 <option>2pm - 4pm</option>
+                 <option>4pm - 6pm</option>
+                 <option>6pm - 8pm</option>
+                 <option>8pm - 10pm</option>
+                 <option>10pm - 12am</option>
+                </select >
              </div>
             
              <div class="inputBox">
-                <span>Reservation date and Time</span>
-                <input type="datetime-local" name="date and time for reservation">
+                <span>Reservation date (Kindly click on the icon)</span>
+                <input type="date" name="reservation date">
              </div>
-             
+             <div class="inputBox">
+               <span>Comments (If any )</span>
+               <input type="text" name="comments">
+            </div>
             
           </div>
        </div>
        
-        <button type="submit"  class="btn" onclick="  openPopup()">Make reservation</button>
+        <button type="submit"  class="btn" >Make reservation</button>
         <div class="popup" id="popup">
          <img src="images/sucess.png">
          <h2>Thank you</h2>
@@ -134,6 +150,7 @@
     
  </section>
 
+ 
 
 <!-- home section ends -->
 
@@ -305,18 +322,20 @@
       </div>
 
       <div class="icons">
-         <i class="fas fa-phone"></i>
-         <h3>phone</h3>
+         
          <a href="tel:0204640640">
+            <i class="fas fa-phone"></i>
+            <h3>phone</h3>
             <p>  +233 20 464 0640</p>
          </a>
          
       </div>
 
       <div class="icons">
-         <i class="fas fa-envelope"></i>
-         <h3>email</h3>
-         <a href="bar@steamanheights.com">
+        
+         <a href="mailto:bar@steamanheights.com">
+            <i class="fas fa-envelope"></i>
+            <h3>email</h3>
             <p>bar@steamanheights.com</p>
             
          </a> 
@@ -324,10 +343,11 @@
       </div>
 
       <div class="icons">
-         <i class="fas fa-map"></i>
-         <h3>address</h3>
-         <p>Atasomanso, Kumasi</p>
-         <p>Ghana</p>
+         <a target="_blank" href="https://www.google.com/maps/place/The+Heights+Bar+%26+Lounge/@6.6683501,-1.6177796,17z/data=!4m14!1m7!3m6!1s0xfdb973306b999cd:0x4129f525ae6694fb!2sThe+Heights+Bar+%26+Lounge!8m2!3d6.6683501!4d-1.6155855!16s%2Fg%2F11q3dcv24g!3m5!1s0xfdb973306b999cd:0x4129f525ae6694fb!8m2!3d6.6683501!4d-1.6155855!16s%2Fg%2F11q3dcv24g"><i class="fas fa-map"></i>
+            <h3>address</h3>
+            <p>Atasomanso, Kumasi</p>
+            <p>Ghana</p></a>
+         
       </div>
 
    </div>
