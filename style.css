@@ -700,6 +700,11 @@ section{
 }
 
 
+.about-text{
+   font-size: 20px; 
+   margin-top: 30px; 
+   line-height: 30px;
+}
 
 
 /* media queries  */
@@ -781,8 +786,16 @@ section{
    }
 
    .home .slide .content h3{
-      font-size: 7rem;
+      font-size: 6rem;
    }
+   .about-text{
+      font-size: 18px; 
+      margin-top: 30px; 
+      line-height: 30px;
+      margin-left: 30px;
+      margin-right: 30px;
+   }
+   
   
 
 
