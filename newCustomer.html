@@ -97,25 +97,25 @@
        <div class="box-container">
           <div class="box">
              <div class="inputBox">
-                <span>full name</span>
-                <input type="text" placeholder="enter your name" name="fullName">
+                <span>full name</span><span style="color: red;"> *</span>
+                <input type="text" placeholder="enter your name" name="fullName" required>
              </div>
              <div class="inputBox">
-                <span>Email</span>
-                <input type="email" placeholder="enter your email"  name="email">
+                <span>Email</span><span style="color: red;"> *</span> 
+                <input type="email" placeholder="enter your email"  name="email" required>
              </div>
              <div class="inputBox">
-               <span>Phone number</span>
-               <input type="number" placeholder="enter your number"  name="phone">
+               <span>Phone number</span><span style="color: red;"> *</span>
+               <input type="number" placeholder="enter your number"  name="phone" required>
             </div>
             
              
           </div>
           <div class="box">
              <div class="inputBox">
-                <span>Reservation duration</span>
+                <span>Reservation duration</span><span style="color: red;"> *</span>
                 <br>
-                <select name="duration">
+                <select name="duration" required>
                
                    <option>Choose duration</option>
                  <option>2pm - 4pm</option>
@@ -127,8 +127,8 @@
              </div>
             
              <div class="inputBox">
-                <span>Reservation date (Kindly click on the icon)</span>
-                <input type="date" name="reservation date">
+                <span>Reservation date (Kindly click on the icon)</span><span style="color: red;"> *</span>
+                <input type="date" name="reservation date" required>
              </div>
              <div class="inputBox">
                <span>Comments (If any )</span>
