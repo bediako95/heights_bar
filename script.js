@@ -19,6 +19,11 @@ var swiper = new Swiper(".home-slider", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    reverseDirection: true,
+  },
 });
 
 var swiper = new Swiper(".food-slider", {
@@ -40,6 +45,11 @@ var swiper = new Swiper(".food-slider", {
     1000: {
       slidesPerView: 3,
     },
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+    reverseDirection: true,
   },
 });
 
