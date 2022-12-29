@@ -110,3 +110,8 @@ var swiper = new Swiper(".blogs-slider", {
     },
   },
 });
+
+function disableButton() {
+  const button = document.getElementById("make_reservation_btn");
+  button.disabled = true;
+}
