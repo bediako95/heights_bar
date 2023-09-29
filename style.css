@@ -635,7 +635,7 @@ section{
 
 .footer .icons-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
    gap:2rem;
 }
 
@@ -812,3 +812,12 @@ section{
    cursor: pointer;
 }
 
+.policy{
+   font-size: 18px;
+   line-height: 2;
+}
+
+/* .list{
+   display: flex;
+   justify-content: space-between;
+} */
